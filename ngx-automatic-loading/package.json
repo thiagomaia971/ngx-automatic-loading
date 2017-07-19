@@ -1,6 +1,6 @@
 {
   "name": "ngx-automatic-loading",
-  "version": "0.0.2",
+  "version": "0.0.10",
   "description": "An Angular 2+ Loading Component",
   "main": "index.js",
   "license": "MIT",
@@ -10,8 +10,10 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "prepublish": "tsc"
   },
+  "typings": "./ngx-automatic-loading.d.ts",
   "keywords": [
     "Angular",
     "Angular2",
@@ -40,6 +42,8 @@
     "@angular/platform-browser": "^4.0.0",
     "@angular/platform-browser-dynamic": "^4.0.0",
     "@angular/router": "^4.0.0",
+    "angular2-ladda": "^1.2.1",
+    "ngx-progressbar": "2.0.0",
     "core-js": "^2.4.1",
     "rxjs": "^5.1.0",
     "zone.js": "^0.8.4"
@@ -50,6 +54,7 @@
     "@angular/language-service": "^4.0.0",
     "@types/jasmine": "2.5.45",
     "@types/node": "~6.0.60",
+    "angular2-ladda": "^1.2.1",
     "codelyzer": "~3.0.1",
     "jasmine-core": "~2.6.2",
     "jasmine-spec-reporter": "~4.1.0",
